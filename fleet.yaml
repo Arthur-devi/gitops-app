@@ -1,1 +1,4 @@
-namespace: default
+namespace: gitops-app
+
+targets:
+  - clusterSelector: {}
