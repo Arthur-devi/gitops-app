@@ -1,1 +1,17 @@
-
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-web
+  namespace: gitops-app
+spec:
+  rules:
+    - host: nginx.SEUDO-DNS.nip.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: nginx-web
+                port:
+                  number: 80
