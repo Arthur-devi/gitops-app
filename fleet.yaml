@@ -1,4 +1,4 @@
-namespace: gitops-app
+defaultNamespace: gitops-app
 
 targets:
   - clusterSelector: {}
