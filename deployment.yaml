@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-web
-  namespace: gitops-app
 spec:
   replicas: 1
   selector:
