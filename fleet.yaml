@@ -1,4 +1,7 @@
 defaultNamespace: gitops-app
 
+helm:
+  takeOwnership: true
+
 targets:
   - clusterSelector: {}
